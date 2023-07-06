@@ -1,0 +1,1 @@
+<?php include('../includes/session.php');  include('../includes/general.php'); comments_redirect('comment_status', 0, 1); 

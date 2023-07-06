@@ -1,0 +1,1 @@
+<?php include('../includes/session.php'); include('includes/navbar.php'); $keyword = $_GET['category']; categories_page(453, $keyword); include('includes/footer_content.php');

@@ -1,0 +1,1 @@
+<?php include('../includes/session.php'); include('includes/navbar.php'); $post_key = $_GET['category']; posts_page(453, $post_key); include('includes/footer_content.php'); ?>

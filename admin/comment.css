@@ -1,0 +1,401 @@
+/* ===============================================================================
+    @EN
+    CSS FOR COMMENTS PAGES SKINS
+    + CSS FOR POST PAGES SKINS
+    ENJOY
+*/
+
+.col-pages{
+    min-height: 80vh;
+} 
+
+.col-pages .card-title{
+    font-weight: 500;
+} 
+
+.col-pages-box{ 
+    box-shadow: 0 0 19px 0 #dad5d5;
+    border-top: 1px solid #d6d4d4;
+    border-right: 1px solid #d6d4d4;
+    border-left: 1px solid #d6d4d4;
+    cursor: default;
+} 
+
+.col-pages-box h4{
+    padding: 10px;
+    font-size: 1em;
+    background: #f3f3f3;
+    border-bottom: 1px solid #d6d4d4;
+}
+
+.col-pages-box h4 .fa{ 
+    padding-right: 5px;
+}
+
+.col-pages-header .colheader .active-class{
+    color: #4B49AC;
+    font-weight: 500;
+}
+
+.col-page-box{
+    display: grid;
+    grid-template-columns: 5% 15% 80%;
+    border-bottom: 1px solid #e6e4e4;
+}
+
+.col-page-box-else{
+    padding: 10px;
+    border-bottom: 1px solid #e6e4e4;
+} 
+
+.col-page-box:nth-child(even){
+    background: #f3f3f3;
+}
+
+.col-page-box:hover{
+    background: #f3f3f3;
+    transition: .1s;
+}
+
+/* Upper crud */
+.col-pages-header .upper-crud{
+    margin-bottom: 20px;
+    display: flex !important; 
+}
+
+.col-pages-header .upper-crud .drop-2{
+    margin-left: 10px;
+}
+
+.upper-crud button{
+    box-shadow: none !important;
+} 
+
+/* Checkbox div */
+.col-page-box .col-page-checkbox{  
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.col-pages-box #select-all{
+    width: 15px;
+    height: 15px;
+    margin-left: 13px;
+}
+
+.col-page-box .col-page-checkbox input{  
+    width: 15px;
+    height: 15px;
+}
+
+/* Comment pic div */
+.col-page-box .col-page-pic{
+    padding: 10px; 
+}
+
+.col-page-box .col-page-pic img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Comment body div */
+.col-page-box .col-page-body{
+    padding: 10px 5px 10px 0;
+}
+
+.col-page-box .col-page-body .post{
+    color: #4B49AC;  
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.col-page-box .col-page-body .post a{ 
+    color: #4B49AC;
+}
+
+.col-page-box .col-page-body .post i{ 
+    font-size: .8em; 
+    margin-right: 7px;
+}
+
+.col-page-box .col-page-body #comment i{
+    color: #333; 
+    font-size: .8em; 
+    margin-right: 7px;
+}
+
+.col-page-box .col-page-body .author{
+    margin-bottom: 0;
+    font-size: .8em; 
+}
+
+.col-page-box .col-page-body .author .name{
+    color: #4B49AC;
+}
+
+.col-page-box .col-page-body .author .time{
+    font-size: .85em;
+    font-weight: bolder;
+}  
+
+.col-page-box .col-page-body .crud{
+    margin-top: -7px;
+}
+
+.col-page-box .col-page-body .crud .btn{
+    padding: 5px 10px !important;
+} 
+
+.col-page-box .col-page-body .crud .btn-a{
+    padding: 3px 10px !important;
+}
+
+.col-page-box .col-page-body .crud button:disabled{
+    border: none;
+    color: #ffff; 
+    background: #ffff;
+    margin-bottom: 2px;
+    width: 1px;
+}
+
+.col-page-box:nth-child(even) .col-page-body .crud button:disabled{ 
+    color: #f3f3f3; 
+    background: #f3f3f3; 
+    transition: .1s;
+}
+
+.col-page-box:hover .col-page-body .crud button:disabled{ 
+    color: #f3f3f3; 
+    background: #f3f3f3; 
+    transition: .1s;
+}
+
+/* Remove display unless on hover */
+.col-page-box .col-page-body .crud .btn{
+    display: none;
+}
+
+.col-page-box:hover .col-page-body .crud .btn{
+    display: unset;
+    transition: .1s;
+}
+
+/* Mobile-Small Screens */
+@media (max-width: 450px) { 
+
+    /* Change grid columns sizes */ 
+    .col-page-box{ 
+        grid-template-columns: 8% 17% 75%; 
+    } 
+    
+    .col-pages-box h4{
+        font-size: .9em;
+    }
+
+    .label label{
+        font-size: .8em;
+    }
+
+    .col-pages-box #select-all{
+        margin-left: 5px;
+    }
+    
+    .col-page-pic{
+        padding-left: 5px !important;
+    }
+    
+    .col-page-box .col-page-pic img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .col-page-body{ 
+        padding-left: 10px !important;
+        padding-right: 5px !important;
+    }
+
+    .col-page-body .col-page-content .post,
+    .col-page-body .col-page-content #comment{
+        font-size: .8em;
+    } 
+
+    .col-page-box .col-page-body .crud .btn{
+        font-size: .7em;
+        /* Always display */
+        display: unset;
+    } 
+
+    /* dont display button disabled */
+    .col-page-box .col-page-body .crud button:disabled{
+        display: none;
+    }
+}
+
+/* 
+============ COMMMENT REPLY & EDIT SECTION ==============
+*/
+.col-page-reply .card-description .ti-arrow-right{
+    font-size: .7em;
+}
+
+.col-page-responsive textarea{
+    box-shadow: 0 0 19px 0 #dad5d5;
+}
+
+.col-page-responsive .buttons .submit{
+    margin-left: 20px;
+}
+
+/* COMMENTS MISCELLENOUS */
+
+.sidebar-offcanvas .nav-link .comments-nav-link{
+    display: flex;
+    position: absolute;
+    left: 135px;
+    color: #ffff;
+    background: #e00606;
+    font-size: .7em;
+    border-radius: 10px;
+    padding: 1px 3px;
+    margin-top: -17px;
+}
+
+.sidebar-offcanvas .sub-menu .comments-nav-link{
+    left: 100px;
+    margin-top: 0px;
+}
+
+/* ========================================================
+    POSTS ONLY
+ */
+
+ .post-card .cat-fa{
+    color: #4B49AC;
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.post-card .category-href{
+    color: #4B49AC;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+ .col-pages-header .label .colheader-2{
+    margin-bottom: 20px !important;
+ }
+
+ .col-pages-header .label .colheader-2 a{
+    color: #4B49AC;
+    font-weight: 500;
+ } 
+
+ .col-pages-header .label .colheader-2 .category{
+    color: #868688; 
+    text-decoration: none;
+    font-weight: unset;
+    cursor: default;
+ } 
+
+ .col-pages-header .label .colheader-2 .fa{
+    color: #b8b4b4;
+ }
+
+ .post-card .col-page-body .post-category{
+    font-size: .8em;
+    color: #777676;
+    line-height: 1.2;
+ }
+
+ .post-card .col-page-body .post-category span:nth-child(odd)::before {
+    content: ' , ';
+ }
+
+ .post-card .col-page-body .post-category span:nth-child(odd)::after {
+    content: ' , ';
+ }
+
+ .post-card .col-page-body .crud .btn{
+    padding-left: 20px !important;
+    padding-right: 20px !important; 
+ }
+
+.post-card .col-page-content .fa{
+    color: #b8b4b4;
+    font-size: .9em;
+}
+
+.col-page-content .ti{
+    color: #696868;
+    font-size: .9em;
+}
+
+.post-card .col-page-pic img{  
+    width: 95%;
+    height: 100px;
+} 
+
+@media (max-width: 450px) {
+    .post-card .col-page-pic img{  
+        width: 99%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 330px) {
+    .post-card .col-page-body .crud .btn{
+        padding-left: 15px !important;
+        padding-right: 15px !important; 
+    }
+}
+
+
+/* ========================================================
+    Mobile Screens for cards in all pages that use them 
+*/
+
+@media (max-width: 450px) {
+    .grid-margin{
+        padding: 0 !important;
+    }
+
+    .card{
+        padding: 20px 8px !important; 
+    }
+
+    .card-body{
+        padding: 0 !important;
+    }
+}
+
+
+/* 
+============ BACK BUTTON ==============
+*/
+.back-button{
+    padding: 10px 20px 15px;
+}
+
+.back-button a{
+    color: #4B49AC;
+    font-weight: bolder;
+}
+
+.back-button .ti-arrow-left{
+    font-size: .8em;
+}
+
+/* Mobile Screens */
+@media (max-width: 450px) {
+    .back-button{
+        padding: 10px 20px 15px 5px;
+    }
+}
+
+
+
+
+

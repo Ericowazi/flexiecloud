@@ -1,0 +1,98 @@
+/* ====================================================================================
+Profile pages:
+1. General style
+2. Profile.php
+3. Edit-profile.php
+=======================================================================================*/
+
+/* ----- General styles ---------- */
+body {
+    background: #F5F7FF;
+}
+
+.main-profile, 
+.edit-profile{
+    margin: 3%; 
+    border-radius: 8px;
+    box-shadow: 0 0 19px 0 #dad5d5;
+}
+
+.bg-profile img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.add-experience:hover {
+    cursor: pointer;
+}
+
+/* Media queries */
+@media (max-width: 450px){
+    .md-9{
+        margin-top: -60px;
+    }
+
+    .bg-profile{
+        margin-top: 10px;
+    }
+    
+    .main-profile, 
+    .edit-profile{
+        margin-left: 0;
+        margin-right: 0;
+    }
+} 
+
+/* ------- Profile.php --------------*/
+.main-profile .profile-photo{
+    margin-bottom: 15px;
+}
+
+.main-profile input:disabled{
+    box-shadow: 0 0 19px 0 #c5c2c2;
+    background: #fff;
+    margin-top: 15px;
+    border: none;
+}
+
+.main-profile .edit-pwd{
+    cursor: pointer;
+    color: #4B49AC;
+    margin-top: 25px;
+    padding-left: 12px;
+    text-decoration: underline;
+}
+
+.main-profile .bio-p{
+    box-shadow: 0 0 19px 0 #c5c2c2;
+    padding: 10px;
+    min-height: 150px;
+    width: 100%;
+}
+
+.main-profile button{
+    margin-top: 15px;
+}
+
+/* password-modal */
+.password input{
+    box-shadow: 0 0 19px 0 #afacac;
+}
+
+/* ------- Edit-rofile.php --------- */
+.labels {
+    font-size: 11px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+.edit-profile .btn-primary{
+    margin-right: 30px;
+}
+
+
+

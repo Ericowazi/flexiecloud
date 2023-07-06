@@ -1,0 +1,1 @@
+<?php include('../includes/session.php'); include('includes/navbar.php'); $keyword = $_POST['keyword']; users_page(455, $keyword); include('includes/footer_content.php'); 

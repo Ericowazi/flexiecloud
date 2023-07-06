@@ -1,0 +1,107 @@
+/* ---------------------------------------------------------------------
+Category Pages
+------------------------------------------------------------------------*/
+/* ---- General tyles------- */
+.category tbody td,
+.category code{
+    cursor: pointer;
+}
+
+.category tbody a{
+    font-weight: bold;
+}
+
+.category tbody a button{
+    padding: 5px 15px;
+}
+
+.category button:focus,
+.category .btn{
+    box-shadow: none !important;
+}
+
+/* ----Category.php page---- */
+.category .add-new{
+    margin-bottom: 20px;
+    margin-left: 15px;
+} 
+
+.category .view-category tbody td{ 
+    padding-top: 15px !important;
+    padding-bottom: 15px !important; 
+}
+
+.category .view-category tbody button{
+    padding: 5px 15px;
+}
+
+.category .dropdown .dropdown-item{
+    font-weight: 900;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.category .dropdown .dropdown-item:hover{
+    font-weight: 900;
+    background: #248AFD;
+}
+
+/* ----add-category.php page---- */
+.add-new .back{
+    color: #4B49AC;
+    font-weight: 900;
+}
+
+.add-new .back .ti-arrow-left{
+    font-size: .8em;
+}
+
+.category .category-responsive{
+    margin-left: 20px;
+}
+
+.category-responsive input,
+.category-responsive textarea{
+    box-shadow: 0 0 15px 0 #d3d0d0;
+}
+
+.category-responsive input:focus,
+.category-responsive textarea:focus{
+    box-shadow: none;
+}
+
+.category-responsive .ti-arrow-right{
+    font-size: .9em;
+}
+
+.category-responsive .cat-label{
+    margin-top: -5px;
+    font-size: .8em;
+    line-height: 1;
+}
+
+@media (max-width: 450px){
+    .category .category-responsive{
+        margin-left: unset;
+    }
+
+    .category-responsive .cat-label{
+        margin-top: -5px;
+        font-size: .7em;
+        line-height: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

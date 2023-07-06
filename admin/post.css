@@ -1,0 +1,250 @@
+/* ----------------------------------------------------------------------
+Blog Pages
+------------------------------------------------------------------------ */
+
+.all-post .table-responsive{
+    min-height: 70vh;
+}
+
+
+.all-post .btn,
+.add-post .btn{
+    box-shadow: none !important;
+}
+
+.add-post .add-new-title{
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.add-post .post-card{
+    width: 100%;
+}
+
+.add-post .post-body .title{
+    margin-bottom: 40px;
+}
+
+.add-post .card{
+    margin-bottom: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 #333;
+}
+
+.add-post .card-heading a label{
+    border-bottom: 1px solid #e9e3e3;
+    padding: 10px 20px 5px;
+    font-weight: 900;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+/* add-new-post sidebar */
+
+.add-post .excerpt .card-heading span{
+    float:right;
+}
+
+.add-post .excerpt .cat-label{
+    margin-top: -5px;
+    font-size: .8em;
+    line-height: 1;
+}
+
+/* publish only */
+
+/* .add-post .publish .card-footer .trash{
+    color: #f00404 !important;
+} */
+
+/* categories only*/
+
+.add-post .categories .card-body{
+    max-height: 260px;
+    overflow-y: scroll;
+}
+
+.add-post .categories .table tbody td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: unset !important;
+}
+
+/* All-posts.php page */
+
+.all-post .post-card h2 span{
+    font-size: .6em;
+}
+
+.all-post .table{
+    background: #e8eaeb;
+}
+
+.all-post .filter .filter-button{
+    border-radius: 3px !important;
+}
+
+.all-post .filter span{
+    background: #e8eaeb; 
+    color: #f00404; 
+    padding: 1px 10px 7px 10px;
+}
+
+.all-post .filter .delete-button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+}
+
+.all-post .filter .deletebox{
+    border-radius: 4px;
+}
+
+.all-post .filter .deletebox a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.all-post .table td{
+    padding-top: 10px;
+}
+
+.all-post .table-header{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.all-post .table .post-title a{
+    color: #056896;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.all-post .table .dropdown .dropdown-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.all-post .table .dropdown .dropdown-item:hover{
+    background: #4B49AC !important;
+    color: #fff;
+}
+
+.all-post .table .dropdown #trash-pub{
+    color: #000;
+}
+
+.all-post .table .dropdown .dropdown-item:hover #trash-pub{
+    text-decoration: none;
+    background: #4B49AC !important;
+    color: #fff;
+}
+
+.all-post .table .post-title a span{
+    font-weight: 400;
+    font-size: .8em;
+}
+
+/* -----Page not set section---- */
+.not-set{
+    margin-top: 20px;
+}
+
+.not-set .card-body{
+    display: grid;
+    justify-content: center;
+}
+
+/* =================================================================
+    Pagination 
+====================================================================*/
+.pagination{
+    margin-top: 30px;
+}
+
+.pagination li a{
+    padding: 10px 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px solid #f0eded;
+    text-decoration: none;
+}
+
+.pagination .active{
+    color: #ffff;
+    background: #4B49AC; 
+    font-weight: 900;
+}
+
+.pagination li a:hover{
+    color: #ffff;
+    background: #4B49AC; 
+}
+
+/* media query */
+@media (max-width: 450px){
+    
+    .pagination-nav{
+        overflow-y: scroll;
+    }
+}
+
+
+/* =================================================================
+    Alert Messages
+====================================================================*/
+.alert p{
+    color: #333;
+    font-weight: 100;
+}
+
+.alert{
+    background: #ffff;
+    box-shadow: 3px 4px 6px 0 #8f8888;
+    font-weight: 600;
+    border: none; 
+}
+
+.alert-success span{
+    color: #05d331;
+}
+
+.alert-success{
+    border-left: 5px solid #05d331 !important;
+}
+
+.alert-success .ti-check{
+    color: #05d331;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.alert-danger{ 
+    border-left: 5px solid #f00404 !important;
+}
+
+.alert-danger p, .alert-danger span{
+    color: #f00404; 
+}
+
+.alert-danger .ti-alert{
+    color: #f00404;
+    font-size: 1em;
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
